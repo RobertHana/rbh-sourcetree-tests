@@ -1,0 +1,14 @@
+```mermaid
+---
+title: Mermaid Sequence Diagram
+---
+sequenceDiagram
+    autonumber
+    participant Client
+    participant OAuthProvider
+    participant Server
+    Client->>OAuthProvider: Request access token
+    activate OAuthProvider
+    OAuthProvider->>Client: Send access token
+    deactivate OAuthProvider
+```
